@@ -23,8 +23,10 @@ Dashboard
             <a href="#" class="nav-item nav-link">Home</a>
             <a href="#" class="nav-item nav-link">Home</a>
         </div>
-        <div class="d-inline">
+        <div class="d-inline m-1">
             <button class="btn btn-primary btn-block">Login</button>
+        </div>
+        <div class="d-inline m-1">
             <button class="btn btn-success btn-block">Signup</button>
         </div>
     </div>
