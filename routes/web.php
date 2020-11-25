@@ -3,4 +3,4 @@
 use Illuminate\Support\Facades\Route;
 
 
-Route::view('/','View@index');
+Route::get('/','View@index');

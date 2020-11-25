@@ -16,7 +16,7 @@ Dashboard
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse">
+    <div class="collapse navbar-collapse" id="navbarDown">
         <div class="navbar-nav mr-auto">
             <a href="#" class="nav-item nav-link">Home</a>
             <a href="#" class="nav-item nav-link">Home</a>
