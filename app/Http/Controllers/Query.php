@@ -16,4 +16,15 @@ class Query extends Controller
         return redirect('/');
     }
 
+    public function show(){
+        $tampil = laravel_advance::all();
+        $nomor = 0;
+        return view('view.index',compact('tampil','nomor'));
+    }
+
+    public function delete($id){
+        $info = laravel_advance::find($id);
+        $info->delete();
+        return redirect('/');
+    }
 }
