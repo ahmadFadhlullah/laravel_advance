@@ -36,7 +36,8 @@ Dashboard
 
 <div class="container p-3">
 <!-- Bungkus table agar responsive -->
-<div class="table-responsive">
+<a href="/add" class="btn btn-primary">Tambah Data</a>
+<div class="table-responsive mt-3">
     <!-- Membuat Table -->
     <table class="table table-striped table-bordered table-hover">
         <thead>

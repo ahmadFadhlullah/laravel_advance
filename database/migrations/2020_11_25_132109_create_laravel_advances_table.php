@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateLaravelAdvanceTable extends Migration
+class CreateLaravelAdvancesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateLaravelAdvanceTable extends Migration
      */
     public function up()
     {
-        Schema::create('laravel_advance', function (Blueprint $table) {
+        Schema::create('laravel_advances', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
             $table->string('kelas');
@@ -29,6 +29,6 @@ class CreateLaravelAdvanceTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('laravel_advance');
+        Schema::dropIfExists('laravel_advances');
     }
 }
