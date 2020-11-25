@@ -65,11 +65,7 @@ Dashboard
                             @method('DELETE')
                             <button class="btn btn-danger btn-sm">Hapus</button>
                         </form>
-                        <form class="d-inline" action="{{ url('/delete/'.$item->id) }}" method="post">
-                            @csrf 
-                            @method('PUT')
-                            <button class="btn btn-warning btn-sm">Ubah</button>
-                        </form>
+                        <a href="{{ url('/change/'.$item->id) }}" class="btn btn-warning btn-sm">Ubah</a>
                         </div>
                     </td>
                 </tr>

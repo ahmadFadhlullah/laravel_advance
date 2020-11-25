@@ -27,4 +27,19 @@ class Query extends Controller
         $info->delete();
         return redirect('/');
     }
+
+    public function put($id){
+        $tampil = laravel_advance::find($id);
+        $nomor = intval($tampil->nomor);
+        return view('view.ubah',compact('tampil'));
+    }
+
+    public function update(Request $req, $id){
+        $info = laravel_advance::find($id);
+        $info->nama = $req->nama;
+        $info->kelas = $req->kelas;
+        $info->nomor = $req->nomor;
+        $info->update();
+        return redirect('/');
+    }
 }
